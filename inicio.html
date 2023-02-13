@@ -4,10 +4,90 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Inicio</title>
+
+        <style>
+            body{
+                margin:auto;
+            }
+
+            #div_menu_izquierdo{
+                background-color: rgb(134, 189, 147);
+                width: 30%;
+                height: 900px;
+                display: inline-block;
+                
+
+            }
+                #div_botones_menu button{
+                    display: block;
+                    width: 100%;
+                    height: 100px;
+                    background-color:rgb(194, 141, 141);
+                    font-size:30px ;
+                    font-weight: 300 ;
+                    border-color:rgb(216, 155, 155)
+                }
+
+            #div_calendario{
+                background-color: rgb(228, 238, 151);
+                width: 69%;
+                height: 900px;
+                display: inline-block;
+            }
+            .dia_calendario{
+                height:100px;
+                width: 100px;
+                background-color:rgb(119, 119, 194);
+                display: inline-block;
+
+
+            }
+            .encabezado_calendario{
+                height:50px;
+                width:100px;
+                background-color:rgb(83, 83, 143);
+                display: inline-block;
+
+            }
+        </style>
+
     </head>
     <body>
         
-        <h1>Aqui va el primer archivo de mi proyecto</h1>
+        <div id="div_menu_izquierdo">
+            <h1>Menu </h1>
+
+            <div id="div_botones_menu">
+                <button>calendario </button>
+                <button> estadisticas</button>
+                <button> resumen </button>
+            </div>
+
+
+        </div>
+
+        <div id="div_calendario">
+            <h1>Calendario</h1>
+            <div class="encabezado_calendario"></div>
+            <div class="encabezado_calendario"></div>
+            <div class="encabezado_calendario"></div>
+            <div class="encabezado_calendario"></div>
+            <div class="encabezado_calendario"></div>
+            <div class="encabezado_calendario"></div>
+            <div class="encabezado_calendario"></div>
+
+            <br>
+
+            <div class="dia_calendario"></div>
+            <div class="dia_calendario"></div>
+            <div class="dia_calendario"></div>
+            <div class="dia_calendario"></div>
+            <div class="dia_calendario"></div>
+            <div class="dia_calendario"></div>
+            <div class="dia_calendario"></div>
+            
+        </div>
+
 
     </body>
 </html>
