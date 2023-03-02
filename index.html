@@ -40,6 +40,8 @@
                 width: 100px;
                 background-color:rgb(119, 119, 194);
                 display: inline-block;
+                margin-right: 5px;
+                margin-bottom: 5px;
 
 
             }
@@ -79,16 +81,35 @@
 
             <br>
 
+            <!-- <div class="dia_calendario"></div>
             <div class="dia_calendario"></div>
             <div class="dia_calendario"></div>
             <div class="dia_calendario"></div>
             <div class="dia_calendario"></div>
             <div class="dia_calendario"></div>
-            <div class="dia_calendario"></div>
-            <div class="dia_calendario"></div>
+            <div class="dia_calendario"></div> -->
             
         </div>
 
+        <script>
+            window.onload = function(){
+
+                
+                 let resultado = document.getElementById('div_calendario');
+
+                for (let i = 1; i <= 30; i++) {
+
+                    let dia_nuevo = document.createElement('div');
+                        dia_nuevo.setAttribute("class", "dia_calendario");
+                        dia_nuevo.innerText = i;
+
+                    
+                    resultado.appendChild(dia_nuevo);
+                    
+                }
+
+            }
+        </script>  
 
     </body>
 </html>
